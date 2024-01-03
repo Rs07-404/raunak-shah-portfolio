@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(216, 216, 216);
+}
+
+::-webkit-scrollbar-thumb{
+  backdrop-filter: saturate(180%) blur(15px);
+  border-radius: 13px;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+.card{
+  padding: 1rem;
+}
+
+.portfolio{
+  padding: 1rem;
+  padding-top: 7rem;
+}
+
+.header{
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.64);
+  padding: 1rem;
+  color: white;
+  backdrop-filter: saturate(180%) blur(15px);
+  position:fixed;
+  width: 100%;
+}
+
+.header .heading{
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+}
+
+.portfolio .banner{
+  display: flex;
+  padding: 2rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-radius: 13px;
+  background-color: rgb(233, 233, 233);
+}
+
+.portfolio .banner .profile{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border: none;
+  align-self: center;
+  justify-content: center;
+}
+
+.portfolio .banner .profile .image{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: none;
+}
+
+.portfolio .banner .divider{
+  display: flex;
+  width: 0.5em;
+  margin: 0rem 3rem 0rem 3rem ;
+  height:10rem;
+  border-radius: 1rem;
+  background-color: rgb(206, 206, 206);
+  align-self: center;
+}
+
+.portfolio .banner .profile-des{
+  display: flex;
+  background-color: rgb(206, 206, 206);
+  width: 100%;
+  border-radius: 13px;
+  padding: 1rem;
+}
+
+.portfolio .banner .profile-des .intro{
+  margin: 0.2rem;;
+  padding: 1rem;
+  display: flexbox;
+  flex: 2;
+  border-radius: 13px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.portfolio .banner .profile-des .intro .name{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.portfolio .banner .profile-des .intro .location{
+  font-size: small;
+  font-weight: bold;
+  color: rgb(163, 163, 163);
+}
+
+.portfolio .banner .profile-des .contact{
+  padding: 0;
+  margin: 0;
+  display: block;
+  flex:3;
+}
+
+.portfolio .banner .profile-des .contact .contact_card{
+  width:80%;
+  margin: 1rem;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 0.5rem;
+  align-items: center;
+  transition: 2s;
+}
+
+.contact_card:hover{
+  background-color: rgb(131, 193, 250);
+  box-shadow: black 0px 2px 32px;
+}
+
+.icon{
+  height: 32px;
+  width: 32px;
+  /* margin: 1rem; */
+}
+
+.portfolio .banner .profile-des .contact .contact_card .info{
+  
+}
+
+.card .sub_head{
+  display: flex;
+  justify-content: center;
+}
+
+.card .list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.card .li{
+  display: flex;
+  justify-content: center;
+}
+
+.card ul > li{
+  display: inline-block;
+  list-style-type:none;
+  margin: 0.5rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.divider-horizontal{
+  display: flex;
+  border-radius: 1rem;
+  background-color: rgb(206, 206, 206);
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  margin: 1% 25%;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1080px) {
+  .header .heading{
+      letter-spacing: 0px;
+  }
+  .portfolio{
+      margin: 0;
+      padding-top: 6rem;
+      display: block;
+  }
+  .portfolio .banner{ 
+      margin: 0;
+      padding: 0;
+      display: block;
+  }
+  .portfolio .banner .divider{
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      margin: 5% 25%;
+      height: 0.5rem;
+      border-radius: 1rem;
+  }
+
+  .portfolio .banner .profile{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-top: 1rem;
+  }
+
+  .portfolio .banner .profile-des{
+      margin: 0;
+      padding: 0;
+      display: block;
+  }
+
+  .portfolio .banner .profile-des .contact{
+      display: flex;
+  }
+  
+}
