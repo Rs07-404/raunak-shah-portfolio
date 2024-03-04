@@ -296,12 +296,29 @@ svg{
     .header > .nav{
         display: none;
         position: relative;
-        top: 50%;
-        border: 1px solid;
+        top: 30%;
+        border: 1px solid grey;
         width: max-content;
         border-radius: 13px;
         box-shadow: 2px 2px 8px grey;
         background-color: white;
+        transition: 1s;
+        animation: appear 1s;
+    }
+
+    .header > .nav > div{
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+    }
+
+    .header > .nav > div > a{
+        text-decoration: none;
+        color: black;
+    }
+
+    @keyframes appear {
+        0%{ opacity: 0; transform: translate(0, -20px);}
+        100%{ opacity: 1; width: max-content; }      
     }
 
     .header > .nav > div{
