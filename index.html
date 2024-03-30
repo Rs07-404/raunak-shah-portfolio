@@ -7,6 +7,7 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="load_box" id="loader"><div class="loader"></div></div>
     <div class="header">
         <div class="menu" id="menu">
             <div class="bar1"></div>
@@ -220,5 +221,15 @@
         <div>Copyright &copy;2024</div>
     </div>
     <script src="index.js"></script>
+    <script>
+        // Window.onload() = function(){
+        //     document.getElementById("loader").style.display = "none";
+        // };
+        document.addEventListener('DOMContentLoaded', function(){
+            setTimeout(() => {
+                document.getElementById("loader").style.display = "none";
+            }, 2000);
+        })
+    </script>
 </body>
 </html>

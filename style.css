@@ -4,6 +4,43 @@
     font-family: sans-serif;
 }
 
+.load_box{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(35px);
+    z-index: 1;
+}
+
+.loader {
+    width: 30%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 20px solid #0000;
+    border-right-color: #FF6464;
+    position: relative;
+    animation: l24 1s infinite linear;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    border: inherit;
+    animation: inherit;
+    animation-duration: 3s;
+  }
+  .loader:after {
+    animation-duration: 2s;
+  }
+  @keyframes l24 {
+    100% {transform: rotate(1turn)}
+  }
+
 body{
     overflow-x: hidden;
 }
