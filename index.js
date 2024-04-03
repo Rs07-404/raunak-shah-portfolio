@@ -25,8 +25,8 @@ window.addEventListener("scroll", function(){
         let element = cards[i].getBoundingClientRect();
         if( element.top >= 0 && 
             element.left >= 0 && 
-            element.bottom <= (windowHeight || document.documentElement.clientHeight) && 
-            element.right <= (windowHeight || document.documentElement.clientWidth)
+            element.bottom < (windowHeight || document.documentElement.clientHeight) && 
+            element.right < (windowHeight || document.documentElement.clientWidth)
             ){
             cards[i].classList.add("active");
         }

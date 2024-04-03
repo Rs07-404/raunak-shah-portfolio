@@ -183,8 +183,8 @@ body{
 
 .projects > .card{
     display: flex;
-    height: 30vh;
-    width: 40vw;
+    height: 10rem;
+    width: 25rem;
     border: 1px solid rgb(186, 186, 186);
     border-radius: 8px;
     transition: 1s;
@@ -226,8 +226,8 @@ body{
 
 .certificates > .card{
     display: flex;
-    height: 60vh;
-    width: 20vw;
+    height: 20rem;
+    width: 20rem;
     border: 1px solid rgb(186, 186, 186);
     border-radius: 8px;
     flex-direction: column;
