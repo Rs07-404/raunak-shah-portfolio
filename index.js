@@ -29,8 +29,6 @@ window.addEventListener("scroll", function(){
             element.right <= (windowHeight || document.documentElement.clientWidth)
             ){
             cards[i].classList.add("active");
-        }else{
-            cards[i].classList.remove("active");
         }
     }
 })
