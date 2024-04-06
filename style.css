@@ -158,17 +158,22 @@ body{
     flex-wrap: wrap;
     gap: 2rem;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.list > div{
+.list > .li{
     display: flex;
-    width: max-content;
+    min-width: 9rem;
+    max-width: max-content;
+    height: 4rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 4px 16px grey;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border-bottom: 1px solid;
 }
 
 .certificates,
