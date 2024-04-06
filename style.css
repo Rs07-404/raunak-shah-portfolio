@@ -190,6 +190,7 @@ body{
 .projects > .card{
     display: flex;
     height: max-content;
+    max-height: 15rem;
     width: 25rem;
     border: 1px solid rgb(186, 186, 186);
     border-radius: 8px;
@@ -445,10 +446,10 @@ svg{
         flex-direction: column;
     } */
 
-    .certificates > .card{
+    /* .certificates > .card{
         width: 80vw;
         height: max-content;
-    }
+    } */
 
     .projects>.card{
         width: 80vw;
