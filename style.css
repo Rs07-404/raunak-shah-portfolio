@@ -54,7 +54,6 @@ body{
     font-weight: bold;
     height: 8vh;
     padding: 1rem;
-    background-color: white;
     z-index: 1;
 }
 
@@ -349,7 +348,6 @@ svg{
         width: max-content;
         border-radius: 13px;
         box-shadow: 2px 2px 8px grey;
-        background-color: white;
         transition: 1s;
         animation: appear 1s;
     }
@@ -476,4 +474,68 @@ svg{
         100%{transform: scale(1);}
     }
 
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: black;
+        color: white;
+    }
+
+    
+    .github{
+        fill: #2b3137;
+    }
+
+    .linkedin{
+        fill: #0077B5;
+    }
+
+    .facebook{
+        fill: #316FF6;
+    }
+
+    .x{
+        fill: white;
+        background-color: black;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .instagram{
+        background: linear-gradient(to bottom right,#e95950,#bc2a8d,#fccc63,#fbad50,#feda75,#d62976,#962fbf,#4f5bd5);
+        border-radius: 8px;
+    }
+
+    .header > .nav{
+        color: white;
+    }
+
+    .header{
+        backdrop-filter: blur(15px);
+    }
+
+    .header > .nav > div > a{
+        color: white;
+    }
+
+    .list > .li{
+        box-shadow: 2px 2px 2px 2px grey;
+    }
+
+    #flask{
+        fill: #ffffff;
+    }
+
+    #express{
+        fill: #ffffff;
+    }
+}
+
+
+@media (prefers-color-scheme: light){
+    body{
+        background-color: white;
+        color: black;
+    }
 }
