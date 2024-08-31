@@ -16,7 +16,7 @@ menu.addEventListener('click',(event) =>{
         
     }
     console.log("clicked "+event+menu)
-})
+});
 
 window.addEventListener("scroll", function(){
     var cards = document.querySelectorAll(".card");
@@ -31,4 +31,26 @@ window.addEventListener("scroll", function(){
             cards[i].classList.add("active");
         }
     }
-})
+});
+
+window.onload = function(){
+    fetch('https://665416871c6af63f467657c2.mockapi.io/issues/v1/visits/1')
+    .then(response => response.json())
+    .then(data => {
+        let count = data.count + 1;
+        return fetch('https://665416871c6af63f467657c2.mockapi.io/issues/v1/visits/1', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({count: count})
+        });
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Visited');
+    })
+    .catch(error => {
+        console.log('Error: ', error);
+    });
+}
